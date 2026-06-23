@@ -1,2 +1,6 @@
+build/
+*.kate-swp
+*.swp
+.*.swp
 *.tmp
 *.min
