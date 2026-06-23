@@ -1,0 +1,31 @@
+  // ══════════════════════════════════════════════════════════════════════════
+  // Go60-specific combos — C1R4+C2R5 layer toggles
+  // Glove80 uses C1R5+C2R6 for the same purpose (one row lower on that board).
+  // Cross-hand thumb combos and same-hand T1-T3 combos live in shared/.
+  // ══════════════════════════════════════════════════════════════════════════
+
+  #ifdef LAYER_Gaming
+  combo_gaming_layer_toggle {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_C1R4 POS_LH_C2R5>;
+    bindings = <&tog LAYER_Gaming>;
+    layers = <0 LAYER_Gaming
+      #ifdef LAYER_macOS
+      LAYER_macOS
+      #endif
+    >;
+  };
+  #endif
+
+  #ifdef LAYER_Typing
+  combo_typing_layer_toggle {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_C1R4 POS_RH_C2R5>;
+    bindings = <&tog LAYER_Typing>;
+    layers = <0 LAYER_Typing
+      #ifdef LAYER_macOS
+      LAYER_macOS
+      #endif
+    >;
+  };
+  #endif

@@ -1,0 +1,368 @@
+  / {
+    underglow-layer {
+      compatible  = "zmk,underglow-layer";
+
+      /*
+      Template {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___     ___ ___ ___     ___ ___ ___     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___         ___ ___ ___     ___ ___ ___         ___ ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Template>;
+      };
+      */
+
+      BaseLayer {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          ___ ___ ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <0>;
+      };
+
+      #ifdef LAYER_macOS
+      macOS {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ GRN CYN MAJ YLW ___                                     ___ YLW MAJ CYN GRN ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          RED RED ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ RED RED
+        >;
+        layer-id = <LAYER_macOS>;
+      };
+      #endif
+
+      #ifdef LAYER_LeftPinky
+      LeftPinky {
+        bindings = <
+          ___ MAJ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          ___ ___ ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_LeftPinky>;
+      };
+      #endif
+
+      #ifdef LAYER_LeftRingy
+      LeftRingy {
+        bindings = <
+          ___ ___ CYN ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          ___ ___ ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_LeftRingy>;
+      };
+      #endif
+
+      #ifdef LAYER_LeftMiddy
+      LeftMiddy {
+        bindings = <
+          ___ ___ ___ GRN ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          ___ ___ ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_LeftMiddy>;
+      };
+      #endif
+
+      #ifdef LAYER_LeftIndex
+      LeftIndex {
+        bindings = <
+          ___ ___ ___ ___ YLW                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          ___ ___ ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_LeftIndex>;
+      };
+      #endif
+
+      #ifdef LAYER_RightIndex
+      RightIndex {
+        bindings = <
+          ___ ___ ___ ___ ___                                             YLW ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          ___ ___ ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_RightIndex>;
+      };
+      #endif
+
+      #ifdef LAYER_RightMiddy
+      RightMiddy {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ GRN ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          ___ ___ ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_RightMiddy>;
+      };
+      #endif
+
+      #ifdef LAYER_RightRingy
+      RightRingy {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ CYN ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          ___ ___ ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_RightRingy>;
+      };
+      #endif
+
+      #ifdef LAYER_RightPinky
+      RightPinky {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ MAJ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ MAJ CYN GRN YLW ___                                     ___ YLW GRN CYN MAJ ___
+          YLW ___ ___ ___ ___ ___     LAC COR ___     ___ COR LAC     ___ ___ ___ ___ ___ YLW
+          ___ ___ ___ ___ LAC         BSL BNL BCL     ___ LAC LAC         LAC ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_RightPinky>;
+      };
+      #endif
+
+      #ifdef LAYER_Cursor
+      Cursor {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ COR COR COR COR ___                                     ___ ___ ___ ___ ___ ___
+          ___ COR COR COR COR GDN                                     GDN COR PUR PUR COR ___
+          YLW MAJ CYN GRN YLW GDN                                     GDN AZU AZU AZU AZU YLW
+          PNK SPG SPG SPG PUR GDN     COR COR ___     SPG SPG SPG     GDN AZU AZU AZU AZU PNK
+          PNK PUR PUR PUR PUR         RED ___ ___     SPG SPG SPG         PUR PUR PUR PUR PNK
+        >;
+        layer-id = <LAYER_Cursor>;
+      };
+      #endif
+
+      #ifdef LAYER_Number
+      Number {
+        bindings = <
+          ___ ___ ___ ___ ___                                             GDN GDN GDN GDN GDN
+          ___ COR COR COR COR ___                                     TEA SPG SPG SPG SPG SPG
+          ___ COR COR COR COR GOL                                     TEA GOL GOL GOL SPG SPG
+          YLW MAJ CYN GRN YLW TEA                                     TEA GOL GOL GOL SPG SPG
+          GDN SPG SPG SPG PUR GDN     ___ ___ ___     SPG SPG SPG     TEA GOL GOL GOL SPG SPG
+          TEA PUR PUR PUR PUR         ___ RED ___     SPG SPG GOL         SPG SPG SPG SPG SPG
+        >;
+        layer-id = <LAYER_Number>;
+      };
+      #endif
+
+      #ifdef LAYER_Function
+      Function {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ COR COR COR COR ___                                     AZU AZU AZU AZU AZU AZU
+          ___ COR COR COR COR GDN                                     GDN PNK PNK PNK PNK PNK
+          YLW MAJ CYN GRN YLW GDN                                     GDN PNK PNK PNK PNK PNK
+          ___ SPG SPG SPG PUR GDN     RED ___ ___     AZU BLU BLU     GDN PNK PNK PNK PNK PNK
+          ___ PUR PUR PUR PUR         ___ ___ ___     AZU AZU AZU         CHU CHU CHU CHU CHU
+        >;
+        layer-id = <LAYER_Function>;
+      };
+      #endif
+
+      #ifdef LAYER_Emoji
+      Emoji {
+        bindings = <
+          ___ ___ ___ ___ ___                                             CYN ___ ___ CYN ___
+          ___ ___ ___ ___ ___ ___                                     ___ CYN ___ ___ CYN ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ GDN PNK SPG AZU ___                                     CYN ___ ___ ___ ___ CYN
+          ___ ___ ___ ___ ___ ___     ___ ___ ___     ___ ___ ___     ___ CYN ___ ___ CYN ___
+          ___ ___ ___ ___ RED         YLW ___ ___     ___ ___ ___         ___ CYN CYN ___ ___
+        >;
+        layer-id = <LAYER_Emoji>;
+      };
+      #endif
+
+      #ifdef LAYER_Symbol
+      Symbol {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          COR PNK AZU AZU CHU CHU                                     ___ ___ ___ ___ ___ ___
+          PUR AZU AZU AZU AZU GDN                                     CHU COR COR COR COR ___
+          GDN GDN SPG BLU GDN GDN                                     CHU COR COR COR COR ___
+          PUR SPG SPG SPG SPG GDN     PUR CHU GDN     ___ ___ ___     CHU PNK PNK PNK PUR YLW
+          COR BLU PNK PNK BLU         GDN GDN GDN     ___ ___ RED         YLW GRN CYN MAJ ___
+        >;
+        layer-id = <LAYER_Symbol>;
+      };
+      #endif
+
+      #ifdef LAYER_Mouse
+      Mouse {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ SPG AZU SPG ___                                     GDN GDN GDN GDN GDN ___
+          ___ SPG AZU AZU AZU SPG                                     SPG FST WRP SLO PUR SPG
+          ___ SPG SLO WRP FST SPG     GDN PUR GDN     BLU BLU BLU     SPG AZU AZU AZU AZU SPG
+          ___ ___ BLU BLU BLU         GDN GDN GDN     ___ RED ___         YLW GRN CYN MAJ ___
+        >;
+        layer-id = <LAYER_Mouse>;
+      };
+      #endif
+
+      #ifdef LAYER_Mouse_fast
+      Mouse_fast {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ SPG FST SPG ___                                     GDN GDN GDN GDN GDN ___
+          ___ SPG FST FST FST SPG                                     SPG FST WRP SLO PUR GDN
+          ___ SPG FST FST FST SPG     GDN PUR GDN     BLU BLU BLU     SPG FST FST FST FST GDN
+          ___ ___ BLU BLU BLU         GDN GDN GDN     ___ RED ___         YLW GRN CYN MAJ ___
+        >;
+        layer-id = <LAYER_Mouse_fast>;
+      };
+      #endif
+
+      #ifdef LAYER_Mouse_warp
+      Mouse_warp {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ SPG WRP SPG ___                                     GDN GDN GDN GDN GDN ___
+          ___ SPG WRP WRP WRP SPG                                     SPG FST WRP SLO PUR GDN
+          ___ SPG WRP WRP WRP SPG     GDN PUR GDN     BLU BLU BLU     SPG WRP WRP WRP WRP GDN
+          ___ ___ BLU BLU BLU         GDN GDN GDN     ___ RED ___         YLW GRN CYN MAJ ___
+        >;
+        layer-id = <LAYER_Mouse_warp>;
+      };
+      #endif
+
+      #ifdef LAYER_Mouse_slow
+      Mouse_slow {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ SPG SLO SPG ___                                     GDN GDN GDN GDN GDN ___
+          ___ SPG SLO SLO SLO SPG                                     SPG FST WRP SLO PUR GDN
+          ___ SPG SLO SLO SLO SPG     GDN PUR GDN     BLU BLU BLU     SPG SLO SLO SLO SLO GDN
+          ___ ___ BLU BLU BLU         GDN GDN GDN     ___ RED ___         YLW GRN CYN MAJ PUR
+        >;
+        layer-id = <LAYER_Mouse_slow>;
+      };
+      #endif
+
+      #ifdef LAYER_System
+      System {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ PNK AZU SPG GDN COR                                     COR GDN SPG AZU PNK ___
+          ___ PNK AZU SPG GDN COR                                     COR GDN SPG AZU PNK ___
+          ___ ___ BLU BLU BLU COR     PUR PUR PUR     ___ ORN RED     COR SSL SNL SCL PUR PUR
+          ___ ___ ___ ___ ORN         SSL SNL SCL     BLU BLU BLU         YLW GRN CYN MAJ PUR
+        >;
+        layer-id = <LAYER_System>;
+      };
+      #endif
+
+      #ifdef LAYER_World
+      World {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ SPG AZU AZU AZU ___                                     ___ ___ CYN CYN ___ ___
+          AZU AZU AZU AZU AZU ___                                     ___ YLW GRN GRN YLW ___
+          AZU AZU SPG SPG AZU ___     ___ ___ ___     ___ ___ ___     ___ ___ ___ ___ ___ ___
+          SPG SPG SPG SPG SPG         ___ ___ ___     ___ ___ ___         RED ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_World>;
+      };
+      #endif
+
+      #ifdef LAYER_Typing
+      Typing {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___     ___ ___ ___     ___ ___ ___     RED ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___         ___ ___ ___     ___ ___ ___         RED ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Typing>;
+      };
+      #endif
+
+      #ifdef LAYER_Gaming
+      Gaming {
+        bindings = <
+          ORN ___ ___ ___ COR                                             TEA TEA TEA TEA TEA
+          ___ GDN GDN GDN GDN GDN                                     TEA TEA TEA TEA TEA TEA
+          ___ GDN GDN GDN GDN GDN                                     ___ ___ ___ ___ ___ TEA
+          ___ COR ___ AZU ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ YLW AZU AZU AZU RED     YLW CYN ___     ORN AZU COR     ___ ___ ___ ___ ___ ___
+          ___ GRN ___ ___ RED         COR GRN COR     AZU AZU AZU         ___ ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Gaming>;
+      };
+      #endif
+
+      #ifdef LAYER_Lower
+      Lower {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ GOL GOL GOL GOL GOL                                     GOL GOL GOL GOL GOL ___
+          ___ MAJ CYN GRN YLW SPG                                     SPG YLW GRN CYN MAJ ___
+          ___ SPG SPG SPG SPG SPG     RED ___ BLU     BLU ___ RED     SPG PNK PNK SPG PNK ___
+          ___ ___ ___ ___ RED         RED RED COR     COR RED RED         RED ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Lower>;
+      };
+      #endif
+
+      #ifdef LAYER_Factory
+      Factory {
+        bindings = <
+          ___ ___ ___ ___ ___                                             ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___                                     ___ ___ ___ ___ ___ ___
+          ___ ___ ___ ___ ___ ___     ___ ___ RED     ___ ___ ___     ___ ___ ___ ___ ___ ___
+          RED ___ ___ ___ ___         ___ ___ ___     ___ ___ ___         ___ ___ ___ ___ ___
+        >;
+        layer-id = <LAYER_Factory>;
+      };
+      #endif
+
+    };
+  };
