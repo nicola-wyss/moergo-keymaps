@@ -1,0 +1,144 @@
+  // ══════════════════════════════════════════════════════════════════════════
+  // Same-hand thumb combos — T1-T3 only, available on all keyboards
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // T2+T3 — sticky globe (voice input / international compose key)
+
+  combo_sticky_globe_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T2 POS_LH_T3>;
+    bindings = <&sk _GLOBE>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  combo_sticky_globe_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T2 POS_RH_T3>;
+    bindings = <&sk _GLOBE>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  // T1+T2 — sticky AltGr (compose / special characters)
+
+  combo_sticky_altgr_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T1 POS_LH_T2>;
+    bindings = <&sk RALT>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  combo_sticky_altgr_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T1 POS_RH_T2>;
+    bindings = <&sk RALT>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  // T1+T2+T3 — base layer reset (escape from any mode)
+
+  combo_base_layer_reset_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T1 POS_LH_T2 POS_LH_T3>;
+    bindings = <&to 0>;
+    layers = <<%= normal_layer_ids %>>;
+  };
+
+  combo_base_layer_reset_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T1 POS_RH_T2 POS_RH_T3>;
+    bindings = <&to 0>;
+    layers = <<%= normal_layer_ids %>>;
+  };
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // Cross-hand (bilateral) thumb combos — available on all keyboards
+  //
+  // LH thumb selects the group; RH thumb selects the modifier/context.
+  // T1 = innermost, T3 = outermost.
+  //
+  //   RH T3 → Ctrl   RH T2 → Alt/_A_TAB   RH T1 → Win/_G_TAB
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // ── Group A: LH T1 + RH Tx — forward tab switching ───────────────────────
+  // Steps forward once, then holds modifier with Cursor layer active for
+  // continued navigation. Release to close the switcher.
+
+  #ifdef LAYER_Cursor
+  combo_forward_ctrl_tab {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T1 POS_RH_T3>;
+    bindings = <&mod_tab_chord LCTL LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  #ifdef _A_TAB
+  combo_forward_alt_tab {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T1 POS_RH_T2>;
+    bindings = <&mod_tab_chord _A_TAB LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+  #endif
+
+  #ifdef _G_TAB
+  combo_forward_win_tab {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T1 POS_RH_T1>;
+    bindings = <&mod_tab_chord _G_TAB LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+  #endif
+
+  // ── Group B: LH T2 + RH Tx — reverse tab switching ──────────────────────
+  // Steps backward once (Shift+Tab), then holds modifier with Cursor layer
+  // active. Release to close the switcher.
+
+  combo_reverse_ctrl_tab {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T2 POS_RH_T3>;
+    bindings = <&mod_reverse_tab_chord LCTL LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  #ifdef _A_TAB
+  combo_reverse_alt_tab {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T2 POS_RH_T2>;
+    bindings = <&mod_reverse_tab_chord _A_TAB LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+  #endif
+
+  #ifdef _G_TAB
+  combo_reverse_win_tab {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T2 POS_RH_T1>;
+    bindings = <&mod_reverse_tab_chord _G_TAB LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+  #endif
+  #endif // LAYER_Cursor
+
+  // ── Group C: LH T3 + RH Tx — caps family ─────────────────────────────────
+  // Increasing permanence: one character → one word → all caps.
+
+  combo_bilateral_sticky_shift {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T3 POS_RH_T3>;
+    bindings = <&sk LSFT>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  combo_bilateral_caps_word {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T3 POS_RH_T2>;
+    bindings = <&caps_word>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  combo_bilateral_caps_lock {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T3 POS_RH_T1>;
+    bindings = <&kp CAPSLOCK>;
+    layers = <<%= typing_layer_ids %>>;
+  };

@@ -1,0 +1,152 @@
+  // ══════════════════════════════════════════════════════════════════════════
+  // Glove80-exclusive combos — second thumb row (T4-T6)
+  // These positions do not exist on the Go60.
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // ── Forward tab switchers (LH, single-hand) ───────────────────────────────
+  // Alternative to the cross-hand bilateral combos in shared: ergonomic for
+  // single-hand use when the right hand is on the mouse.
+
+  #if defined(_A_TAB) && defined(LAYER_Cursor)
+  combo_alt_tab_switcher_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T1 POS_LH_T4>;
+    bindings = <&mod_tab_chord _A_TAB LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+  #endif
+
+  combo_ctrl_tab_switcher_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T2 POS_LH_T5>;
+    bindings = <&mod_tab_chord LCTL LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  #if defined(_G_TAB) && defined(LAYER_Cursor)
+  combo_win_tab_switcher_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T3 POS_LH_T6>;
+    bindings = <&mod_tab_chord _G_TAB LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+  #endif
+
+  // ── Modifier chords (RH) ─────────────────────────────────────────────────
+  // Hyper / Meh / Turbo: useful as hotkey triggers in window managers and apps.
+
+  combo_hyper_GACS_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T1 POS_RH_T4>;
+    bindings = <&kp LG(LA(LC(LSHFT)))>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  combo_meh_ACS_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T2 POS_RH_T5>;
+    bindings = <&kp LA(LC(LSHFT))>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  combo_turbo_CS_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T3 POS_RH_T6>;
+    bindings = <&kp LC(LSHFT)>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  // ── Typing layer extras ───────────────────────────────────────────────────
+
+  // T1+T5 — sticky shift (faster than the bilateral cross-hand combo)
+  combo_sticky_shift_left {
+    timeout-ms = <SHIFT_FIRING_DECAY>;
+    key-positions = <POS_LH_T1 POS_LH_T5>;
+    bindings = <&sticky_key_modtap LSFT LSFT>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  combo_sticky_shift_right {
+    timeout-ms = <SHIFT_FIRING_DECAY>;
+    key-positions = <POS_RH_T1 POS_RH_T5>;
+    bindings = <&sticky_key_modtap RSFT RSFT>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  // T4+T5 — caps word
+  combo_caps_word_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T4 POS_LH_T5>;
+    bindings = <&caps_word>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  combo_caps_word_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T4 POS_RH_T5>;
+    bindings = <&caps_word>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  // T2+T6 — caps lock
+  combo_caps_lock_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T2 POS_LH_T6>;
+    bindings = <&kp CAPSLOCK>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  combo_caps_lock_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T2 POS_RH_T6>;
+    bindings = <&kp CAPSLOCK>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  // T5+T6 — typing layer momentary hold
+  #ifdef LAYER_Typing
+  combo_typing_layer_access_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T5 POS_LH_T6>;
+    bindings = <&mo LAYER_Typing>;
+    layers = <<%= normal_layer_ids %>>;
+  };
+
+  combo_typing_layer_access_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T5 POS_RH_T6>;
+    bindings = <&mo LAYER_Typing>;
+    layers = <<%= normal_layer_ids %>>;
+  };
+  #endif
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // Layer toggles — Glove80-specific positions (C1R5+C2R6)
+  // Go60 uses C1R4+C2R5 in its own combos file.
+  // ══════════════════════════════════════════════════════════════════════════
+
+  #ifdef LAYER_Gaming
+  combo_gaming_layer_toggle {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_C1R5 POS_LH_C2R6>;
+    bindings = <&tog LAYER_Gaming>;
+    layers = <0 LAYER_Gaming
+      #ifdef LAYER_macOS
+      LAYER_macOS
+      #endif
+    >;
+  };
+  #endif
+
+  #ifdef LAYER_Typing
+  combo_typing_layer_toggle {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_C1R5 POS_RH_C2R6>;
+    bindings = <&tog LAYER_Typing>;
+    layers = <0 LAYER_Typing
+      #ifdef LAYER_macOS
+      LAYER_macOS
+      #endif
+    >;
+  };
+  #endif

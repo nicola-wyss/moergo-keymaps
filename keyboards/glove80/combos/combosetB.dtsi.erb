@@ -1,0 +1,134 @@
+  // ══════════════════════════════════════════════════════════════════════════
+  // Glove80 Set B — C1R5 and C2R6 (adjacent to thumb cluster)
+  // C1R5+C2R6 as a pair is reserved for layer toggles (Group E).
+  // Same-hand caps word is not available (pair taken); bilateral in shared covers it.
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // ── Group A: Forward tab switching (LH single-hand) ──────────────────────
+  // T1/T2/T3 paired with C1R5 or C2R6; mirrors the T+T4/T5/T6 pattern of set A.
+
+  #if defined(_A_TAB) && defined(LAYER_Cursor)
+  combo_alt_tab_switcher_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T1 POS_LH_C1R5>;
+    bindings = <&mod_tab_chord _A_TAB LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+  #endif
+
+  combo_ctrl_tab_switcher_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T2 POS_LH_C2R6>;
+    bindings = <&mod_tab_chord LCTL LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  #if defined(_G_TAB) && defined(LAYER_Cursor)
+  combo_win_tab_switcher_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T3 POS_LH_C1R5>;
+    bindings = <&mod_tab_chord _G_TAB LAYER_Cursor>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+  #endif
+
+  // ── Group B: Modifier chords (RH same-hand) ───────────────────────────────
+
+  combo_hyper_GACS_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T1 POS_RH_C1R5>;
+    bindings = <&kp LG(LA(LC(LSHFT)))>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  combo_meh_ACS_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T2 POS_RH_C2R6>;
+    bindings = <&kp LA(LC(LSHFT))>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  combo_turbo_CS_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T3 POS_RH_C1R5>;
+    bindings = <&kp LC(LSHFT)>;
+    layers = <<%= alpha_layer_ids %>>;
+  };
+
+  // ── Group C: Caps / shift family (both hands) ────────────────────────────
+
+  combo_sticky_shift_left {
+    timeout-ms = <SHIFT_FIRING_DECAY>;
+    key-positions = <POS_LH_T1 POS_LH_C2R6>;
+    bindings = <&sticky_key_modtap LSFT LSFT>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  combo_sticky_shift_right {
+    timeout-ms = <SHIFT_FIRING_DECAY>;
+    key-positions = <POS_RH_T1 POS_RH_C2R6>;
+    bindings = <&sticky_key_modtap RSFT RSFT>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  combo_caps_lock_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T2 POS_LH_C1R5>;
+    bindings = <&kp CAPSLOCK>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  combo_caps_lock_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T2 POS_RH_C1R5>;
+    bindings = <&kp CAPSLOCK>;
+    layers = <<%= typing_layer_ids %>>;
+  };
+
+  // ── Group D: Layer access (both hands) ───────────────────────────────────
+
+  #ifdef LAYER_Typing
+  combo_typing_layer_access_left {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_T3 POS_LH_C2R6>;
+    bindings = <&mo LAYER_Typing>;
+    layers = <<%= normal_layer_ids %>>;
+  };
+
+  combo_typing_layer_access_right {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_T3 POS_RH_C2R6>;
+    bindings = <&mo LAYER_Typing>;
+    layers = <<%= normal_layer_ids %>>;
+  };
+  #endif
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // Layer toggles — C1R5+C2R6, unchanged from set A
+  // ══════════════════════════════════════════════════════════════════════════
+
+  #ifdef LAYER_Gaming
+  combo_gaming_layer_toggle {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_LH_C1R5 POS_LH_C2R6>;
+    bindings = <&tog LAYER_Gaming>;
+    layers = <0 LAYER_Gaming
+      #ifdef LAYER_macOS
+      LAYER_macOS
+      #endif
+    >;
+  };
+  #endif
+
+  #ifdef LAYER_Typing
+  combo_typing_layer_toggle {
+    timeout-ms = <COMBO_FIRING_DECAY>;
+    key-positions = <POS_RH_C1R5 POS_RH_C2R6>;
+    bindings = <&tog LAYER_Typing>;
+    layers = <0 LAYER_Typing
+      #ifdef LAYER_macOS
+      LAYER_macOS
+      #endif
+    >;
+  };
+  #endif

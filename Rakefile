@@ -8,6 +8,7 @@ require 'erb'
 #-----------------------------------------------------------------------------
 
 KB        = ENV.fetch('KB', 'go60')
+COMBOSET  = ENV.fetch('COMBO', 'A')
 BUILD_DIR = "build/#{KB}"
 PDF_DIR   = "#{BUILD_DIR}/pdf"
 KB_DIR    = "keyboards/#{KB}"
@@ -51,8 +52,8 @@ keymap_tmp = "#{BUILD_DIR}/keymap.dtsi.erb.tmp"
 keymap_deps = FileList[
   keymap_erb,
   'shared/keymap/behaviors.dtsi.erb',
-  'shared/keymap/combos.dtsi.erb',
-  "#{KB_DIR}/combos.dtsi.erb",
+  "shared/combos/comboset#{COMBOSET}.dtsi.erb",
+  "#{KB_DIR}/combos/comboset#{COMBOSET}.dtsi.erb",
   *Dir.glob("#{KB_DIR}/editorExports/*.{json,zmk,keymap}"),
   'shared/chars/*.yaml',
   __FILE__

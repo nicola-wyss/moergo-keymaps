@@ -224,8 +224,8 @@ combos {
     emit_setting_ifndef.(:SHIFT_FIRING_DECAY, 50)
   %>
 
-<%= ERB.new(File.read("shared/keymap/combos.dtsi.erb"), eoutvar: '_sub').result(binding) %>
-<%= ERB.new(File.read("#{ENV.fetch('KB_DIR')}/combos.dtsi.erb"), eoutvar: '_sub').result(binding) %>
+<%= ERB.new(File.read("shared/combos/comboset#{COMBOSET}.dtsi.erb"), eoutvar: '_sub').result(binding) %>
+<%= ERB.new(File.read("#{ENV.fetch('KB_DIR')}/combos/comboset#{COMBOSET}.dtsi.erb"), eoutvar: '_sub').result(binding) %>
 };
 
 behaviors {
