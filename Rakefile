@@ -7,7 +7,7 @@ require 'erb'
 # Source and output directories
 #-----------------------------------------------------------------------------
 
-KB        = ENV.fetch('KB', 'go60')
+KB        = ENV.fetch('KB', 'glove80')
 COMBOSET  = ENV.fetch('COMBO', 'A')
 BUILD_DIR = "build/#{KB}"
 PDF_DIR   = "#{BUILD_DIR}/pdf"

@@ -3,12 +3,12 @@
   "firmware_api_version": "1",
   "locale": "en-US",
   "uuid": "",
-  "parent_uuid": "84be92a8-179c-4747-ac5d-e6d6a2420dbf",
+  "parent_uuid": "48223a82-61d6-415a-a664-1194baadf2f5",
   "unlisted": false,
-  "date": 1782055364,
+  "date": 1782543865,
   "creator": "nw",
-  "title": "Generic Engrammer v52, Go60, Subversion 01",
-  "notes": "Harmonized builder for MoErgo Keyboards (Glove80 and Go60).\nSee repo for customization details: TODO\n\nAn adaption based on:\nSunaku's Keymap v52 for the \"Glorious Engrammer\" 🧑‍🚀🚀✨\n- Intro & setup: https://github.com/sunaku/glove80-keymaps/tree/v52/#readme\n- Release notes: https://github.com/sunaku/glove80-keymaps/releases/tag/v52\n- Printable map: https://github.com/sunaku/glove80-keymaps/raw/v52/README/all-layer-diagrams.pdf\n- Documentation: https://sunaku.github.io/moergo-glove80-keyboard.html#layers\n- Discord forum: #glorious-engrammer channel in https://www.moergo.com/discord\n\nNotes:\n- Added more explanations for infrequent users\n- ZMK Docs: https://zmk.dev/docs\n\nMouse controls:\nTo dragh: Double-tap and hold \nhttps://docs.moergo.com/go60-user-guide/touchpad/\n\nTODO:\n - Combo for CAPS to facilitate language switch (jp input)\n - Adjust non-enthium layers",
+  "title": "Generalized Engrammer v52.0, Go60",
+  "notes": "Harmonized builder for MoErgo Keyboards (Glove80 and Go60).\nSee repo for customization details: https://github.com/nicola-wyss/moergo-keymaps\n\nAn adaption based on:\nSunaku's Keymap v52 for the \"Glorious Engrammer\" 🧑‍🚀🚀✨\n- Intro & setup: https://github.com/sunaku/glove80-keymaps/tree/v52/#readme\n- Release notes: https://github.com/sunaku/glove80-keymaps/releases/tag/v52\n- Printable map: https://github.com/sunaku/glove80-keymaps/raw/v52/README/all-layer-diagrams.pdf\n- Documentation: https://sunaku.github.io/moergo-glove80-keyboard.html#layers\n- Discord forum: #glorious-engrammer channel in https://www.moergo.com/discord\n\nMouse controls:\nTo drag-tap and hold \nhttps://docs.moergo.com/go60-user-guide/touchpad/\n\nNotes:\n - Combinations currently in testing (Custom sets can be created and integrated into the custom defined behaviors by altering the comboset_.dtsi.erb files and rebuilding rake KB=go60 keymap) (See: https://github.com/nicola-wyss/moergo-keymaps)",
   "tags": [
     "sunaku",
     "home-row-mods",
@@ -164,7 +164,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "EQUAL"
+            "value": "BSLH"
           }
         ]
       },
@@ -204,7 +204,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "MINUS"
+            "value": "EQUAL"
           }
         ]
       },
@@ -324,7 +324,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "X"
+            "value": "MINUS"
           }
         ]
       },
@@ -411,7 +411,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "SQT"
+            "value": "X"
           }
         ]
       },
@@ -495,27 +495,23 @@
         }
       },
       {
-        "value": "Custom",
+        "value": "&kp",
         "params": [
           {
-            "value": "&parang_left"
+            "value": "SQT"
           }
-        ],
-        "decoration": {
-          "label": "( <",
-          "description": "Parang: Tap for parenthesis, shift-tap for angle bracket."
-        }
+        ]
       },
       {
         "value": "Custom",
         "params": [
           {
-            "value": "&parang_right"
+            "value": "&stumb LAYER_Lower GRAVE"
           }
         ],
         "decoration": {
-          "label": ") >",
-          "description": "Parang: Tap for parenthesis, shift-tap for angle bracket."
+          "label": "`~",
+          "icon": "fa-angle-double-down"
         }
       },
       {
@@ -554,7 +550,6 @@
         "decoration": {
           "label": "[{",
           "icon": "fa-angle-double-down",
-          "background": "#d1c4e9",
           "description": "Hold for Lower layer. Tap for left bracket."
         }
       },
@@ -9206,7 +9201,16 @@
         "value": "&none"
       },
       {
-        "value": "&none"
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&tog LAYER_Function"
+          }
+        ],
+        "decoration": {
+          "icon": "io-finger-print",
+          "background": "#000000"
+        }
       },
       {
         "value": "&kp",
@@ -10109,28 +10113,43 @@
         }
       },
       {
-        "value": "&mkp",
+        "value": "Custom",
         "params": [
           {
-            "value": "LCLK"
+            "value": "&kp RIGHT_INDEX_MOD"
           }
-        ]
+        ],
+        "decoration": {
+          "label": "Shift",
+          "icon": "fa-align-right",
+          "background": "#ffecb3"
+        }
       },
       {
-        "value": "&mkp",
+        "value": "Custom",
         "params": [
           {
-            "value": "MCLK"
+            "value": "&kp RIGHT_MIDDY_MOD"
           }
-        ]
+        ],
+        "decoration": {
+          "label": "Ctrl",
+          "icon": "fa-align-right",
+          "background": "#dcedc8"
+        }
       },
       {
-        "value": "&mkp",
+        "value": "Custom",
         "params": [
           {
-            "value": "RCLK"
+            "value": "&kp RIGHT_RINGY_MOD"
           }
-        ]
+        ],
+        "decoration": {
+          "label": "Alt",
+          "icon": "fa-align-right",
+          "background": "#bbdefb"
+        }
       },
       {
         "value": "Custom",
@@ -10427,43 +10446,28 @@
         }
       },
       {
-        "value": "Custom",
+        "value": "&mkp",
         "params": [
           {
-            "value": "&kp RIGHT_INDEX_MOD"
+            "value": "LCLK"
           }
-        ],
-        "decoration": {
-          "label": "Shift",
-          "icon": "fa-align-right",
-          "background": "#ffecb3"
-        }
+        ]
       },
       {
-        "value": "Custom",
+        "value": "&mkp",
         "params": [
           {
-            "value": "&kp RIGHT_MIDDY_MOD"
+            "value": "MCLK"
           }
-        ],
-        "decoration": {
-          "label": "Ctrl",
-          "icon": "fa-align-right",
-          "background": "#dcedc8"
-        }
+        ]
       },
       {
-        "value": "Custom",
+        "value": "&mkp",
         "params": [
           {
-            "value": "&kp RIGHT_RINGY_MOD"
+            "value": "RCLK"
           }
-        ],
-        "decoration": {
-          "label": "Alt",
-          "icon": "fa-align-right",
-          "background": "#bbdefb"
-        }
+        ]
       },
       {
         "value": "&mkp",
@@ -10864,11 +10868,12 @@
         }
       },
       {
-        "value": "&none",
-        "decoration": {
-          "icon": "io-finger-print",
-          "background": "#000000ff"
-        }
+        "value": "&kp",
+        "params": [
+          {
+            "value": "K_APP"
+          }
+        ]
       },
       {
         "value": "&none"
@@ -10898,12 +10903,16 @@
         ]
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "K_APP"
+            "value": "&tog LAYER_System"
           }
-        ]
+        ],
+        "decoration": {
+          "icon": "io-finger-print",
+          "background": "#000000ff"
+        }
       },
       {
         "value": "&kp",
@@ -11139,6 +11148,30 @@
         "value": "Custom",
         "params": [
           {
+            "value": "&emoji_theme_game"
+          }
+        ],
+        "decoration": {
+          "label": "🎯🎲",
+          "background": "#eeeeee"
+        }
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&emoji_theme_trend"
+          }
+        ],
+        "decoration": {
+          "label": "📈📉",
+          "background": "#eeeeee"
+        }
+      },
+      {
+        "value": "Custom",
+        "params": [
+          {
             "value": "&emoji_rainbow "
           }
         ],
@@ -11151,11 +11184,11 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&emoji_light_skin_tone"
+            "value": "&emoji_cloudy"
           }
         ],
         "decoration": {
-          "label": "🏻",
+          "label": "️☁️",
           "background": "#eeeeee"
         }
       },
@@ -11163,11 +11196,11 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&emoji_medium_light_skin_tone"
+            "value": "&emoji_mostly_sunny"
           }
         ],
         "decoration": {
-          "label": "🏼",
+          "label": "️🌤️",
           "background": "#eeeeee"
         }
       },
@@ -11175,35 +11208,11 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&emoji_medium_skin_tone"
+            "value": "&emoji_full_moon"
           }
         ],
         "decoration": {
-          "label": "🏽",
-          "background": "#eeeeee"
-        }
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&emoji_medium_dark_skin_tone"
-          }
-        ],
-        "decoration": {
-          "label": "🏾",
-          "background": "#eeeeee"
-        }
-      },
-      {
-        "value": "Custom",
-        "params": [
-          {
-            "value": "&emoji_dark_skin_tone"
-          }
-        ],
-        "decoration": {
-          "label": "🏿",
+          "label": "🌕",
           "background": "#eeeeee"
         }
       },
@@ -11896,7 +11905,16 @@
         "value": "&none"
       },
       {
-        "value": "&none"
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&world_consonants_base"
+          }
+        ],
+        "decoration": {
+          "label": "Ç",
+          "background": "#e0f2f1"
+        }
       },
       {
         "value": "Custom",
@@ -11987,17 +12005,26 @@
         "value": "&none"
       },
       {
-        "value": "&none"
+        "value": "Custom",
+        "params": [
+          {
+            "value": "&world_currency_base"
+          }
+        ],
+        "decoration": {
+          "label": "$",
+          "background": "#e0f2f1"
+        }
       },
       {
         "value": "Custom",
         "params": [
           {
-            "value": "&world_consonants_base"
+            "value": "&world_quotes_left_base"
           }
         ],
         "decoration": {
-          "label": "Ç",
+          "label": "“",
           "background": "#e0f2f1"
         }
       },
@@ -12115,11 +12142,11 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&world_currency_base"
+            "value": "&world_sign_base"
           }
         ],
         "decoration": {
-          "label": "$",
+          "label": "©",
           "background": "#e0f2f1"
         }
       },
@@ -12127,11 +12154,11 @@
         "value": "Custom",
         "params": [
           {
-            "value": "&world_quotes_left_base"
+            "value": "&world_quotes_right_base"
           }
         ],
         "decoration": {
-          "label": "“",
+          "label": "”",
           "background": "#e0f2f1"
         }
       },
@@ -12253,183 +12280,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N0"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N4"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N8"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N3"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N8"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N3"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N3"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N8"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N3"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N8"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N4"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N0"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N1"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N5"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N9"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N4"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N9"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N4"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N4"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N9"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N4"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N9"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N5"
+            "value": "EQUAL"
           }
         ]
       },
@@ -12453,94 +12304,6 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N6"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N0"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N5"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N0"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N5"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N5"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N0"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N5"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N0"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N6"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N2"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
             "value": "N3"
           }
         ]
@@ -12549,7 +12312,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N7"
+            "value": "N4"
           }
         ]
       },
@@ -12557,23 +12320,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N1"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N6"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N1"
+            "value": "N5"
           }
         ]
       },
@@ -12582,102 +12329,6 @@
         "params": [
           {
             "value": "N6"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N6"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N1"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N6"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N1"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N7"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N3"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N2"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N7"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N2"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N2"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N7"
-          }
-        ]
-      },
-      {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "N2"
           }
         ]
       },
@@ -12709,7 +12360,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N9"
+            "value": "N0"
           }
         ]
       },
@@ -12717,7 +12368,7 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N8"
+            "value": "MINUS"
           }
         ]
       },
@@ -12725,7 +12376,383 @@
         "value": "&kp",
         "params": [
           {
-            "value": "N7"
+            "value": "TAB"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "Q"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "W"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "E"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "R"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "T"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "Y"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "U"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "I"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "O"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "P"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "BSLH"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "ESC"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "A"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "S"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "D"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "F"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "G"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "H"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "J"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "K"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "L"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "SEMI"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "SQT"
+          }
+        ]
+      },
+      {
+        "value": "&magic"
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "Z"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "X"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "C"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "V"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "B"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "N"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "M"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "COMMA"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DOT"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "FSLH"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "CAPS"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "GRAVE"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "DEL"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "BSPC"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "RGUI"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LBKT"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "RBKT"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LALT"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LSHFT"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "LCTRL"
+          }
+        ],
+        "decoration": {
+          "label": "LCTRL",
+          "icon": "io-finger-print",
+          "background": "#000000"
+        }
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "RALT"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "SPACE"
+          }
+        ]
+      },
+      {
+        "value": "&kp",
+        "params": [
+          {
+            "value": "RET"
           }
         ]
       }
@@ -13069,7 +13096,11 @@
         "value": "&none"
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "decoration": {
+          "icon": "io-finger-print",
+          "background": "#000000"
+        }
       },
       {
         "value": "Custom",
@@ -13098,7 +13129,11 @@
         }
       },
       {
-        "value": "&none"
+        "value": "&none",
+        "decoration": {
+          "icon": "io-finger-print",
+          "background": "#000000"
+        }
       },
       {
         "value": "&none"
@@ -13972,76 +14007,70 @@
     ],
     [
       {
-        "value": "&bt",
+        "value": "Custom",
         "params": [
           {
-            "value": "BT_CLR"
+            "value": "&to 0"
           }
-        ]
+        ],
+        "decoration": {
+          "label": "Base",
+          "icon": "fa-0"
+        }
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "C_BRI_DN"
+            "value": "&to 1"
           }
-        ]
+        ],
+        "decoration": {
+          "label": "Alpha",
+          "icon": "fa-1",
+          "description": "Switch to alpha layout #1.  Beware that macOS mode and bilateral combinations enforcement won't work properly until you switch back to the base layer's alpha layout #0."
+        }
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "C_BRI_UP"
+            "value": "&to 2"
           }
-        ]
+        ],
+        "decoration": {
+          "label": "Alpha",
+          "icon": "fa-2",
+          "description": "Switch to alpha layout #2.  Beware that macOS mode and bilateral combinations enforcement won't work properly until you switch back to the base layer's alpha layout #0."
+        }
       },
       {
-        "value": "&kp",
+        "value": "Custom",
         "params": [
           {
-            "value": "C_PREV"
+            "value": "&to 3"
           }
-        ]
+        ],
+        "decoration": {
+          "label": "Alpha",
+          "icon": "fa-3",
+          "description": "Switch to alpha layout #3.  Beware that macOS mode and bilateral combinations enforcement won't work properly until you switch back to the base layer's alpha layout #0."
+        }
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "C_NEXT"
-          }
-        ]
+        "value": "&none"
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "C_PP"
-          }
-        ]
+        "value": "&none"
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "C_MUTE"
-          }
-        ]
+        "value": "&none"
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "C_VOL_DN"
-          }
-        ]
+        "value": "&none"
       },
       {
-        "value": "&kp",
-        "params": [
-          {
-            "value": "C_VOL_UP"
-          }
-        ]
+        "value": "&none"
       },
       {
         "value": "&none"
@@ -14187,7 +14216,12 @@
         }
       },
       {
-        "value": "&none"
+        "value": "&tog",
+        "params": [
+          {
+            "value": 4
+          }
+        ]
       },
       {
         "value": "&bt_0"
@@ -14214,7 +14248,12 @@
         "value": "&none"
       },
       {
-        "value": "&none"
+        "value": "&tog",
+        "params": [
+          {
+            "value": 4
+          }
+        ]
       },
       {
         "value": "&to",
@@ -14236,7 +14275,12 @@
         "value": "&none"
       },
       {
-        "value": "&none"
+        "value": "&bt",
+        "params": [
+          {
+            "value": "BT_CLR"
+          }
+        ]
       },
       {
         "value": "&none"
@@ -14254,7 +14298,12 @@
         "value": "&none"
       },
       {
-        "value": "&none"
+        "value": "&tog",
+        "params": [
+          {
+            "value": 25
+          }
+        ]
       },
       {
         "value": "&none"
