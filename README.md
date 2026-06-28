@@ -17,8 +17,8 @@ as well as traditional pinky shifts are also provided to ease your transition.
 
 Open the following link to clone/customize/build this keymap for your Glove80/Go60:
 
-  - https://my.moergo.com/glove80/#/layout/user/aba31396-9731-40df-bdd8-1e1b856aa1f4
-  - https://my.moergo.com/go60/#/layout/user/40faecee-08b7-48e1-b55e-be0a2da6f237
+  - Glove80: https://my.moergo.com/glove80/#/layout/user/aba31396-9731-40df-bdd8-1e1b856aa1f4
+  - Go60:    https://my.moergo.com/go60/#/layout/user/40faecee-08b7-48e1-b55e-be0a2da6f237
 
 Sunaku's personal customizations on top of the defaults:
 
@@ -28,15 +28,16 @@ Sunaku's personal customizations on top of the defaults:
 #define RIGHT_INDEX_STREAK_DECAY 80 // faster HRM shift cooldown (gcA alias)
 ```
 
-### Legend
+### Legend (Keymaps as PDFs)
 
-The keymap overview for the latest release can be found in the release folder
-under the respective keyboard: `release/
-
-
+The keymap overview for the latest release can be found in the release directory.
 If you run the rake yourself, they will be located in `build/glove80/pdf` or
 `build/go60/pdf`.
 
+Printable PDF keymap:
+
+- [Glove80](release/glove80/pdf/all-layer-diagrams.pdf)
+- [Go60](release/go60/pdf/all-layer-diagrams.pdf)
 
 
 ### Build your own derivation
@@ -44,31 +45,34 @@ If you run the rake yourself, they will be located in `build/glove80/pdf` or
 #### Basic workflow
 
 1. Create your layouts in the graphical editor.
-2. Export the ZMK and json in the [MoErgo Layout editor](https://my.moergo.com/),
-place them into the respective folder (`keyboards/_/editorExports`) (renaming
-them is not necessary) (the `Custom defined behavior` and
-`custom device tree` can be left empty, those are generated from the `.erb` 
-files in this repository).
+2. Export the ZMK and JSON from the [MoErgo Layout editor](https://my.moergo.com/),
+place them into the respective folder (renaming them is not necessary and
+the `Custom defined behavior` and `custom device-tree` can be left empty at this
+stage):
+   - [Glove80](keyboards/glove80/editorExports)
+   - [Go60](keyboards/go60/editorExports)
+
 3. Adjust the behavior if needed.
 4. Build (add the GE functionality) using `rake KB=go60` or `rake KB=glove80` 
 (if you want to use custom combinations, further specify the respective set (e.g. 'B')
 using `COMBO=B`).
 5. Copy the `build/_/keymap.dtsi` (Custom defined behavior) and 
-`build/_/device.dtsi`(custom device tree) to the respective section in the 
+`build/_/device.dtsi` (custom device-tree) to the respective section in the 
 [MoErgo Layout editor](https://my.moergo.com/). 
-6. Build the zmk and flash it onto your keyboard.
+6. Build the ZMK and flash it onto your keyboard.
 
-> [INFO]: The Custom defined behavior provides functions that are necessary for
-> the Build in the Layout editor. It will fail without these as a function like
+> [!NOTE]
+> The Custom defined behavior provides functions that are necessary for
+> the build in the Layout editor. It will fail without these, as a function like
 > `&LeftPinky (C, LAYER_Enthium)` is not defined in the graphical layout.
 > So copy the `build/_/keymap.dtsi` into the editor and it should work (given
 > correct layer config).
 
 #### rake command options
 
-The minimal command used for building the custome defined behavior (keymap.dtsi)
-and the custom device-tree (device.dtsi) are the two following two rake commands.
-The KB argument can be left out so it will default to the Glove80.
+The minimal command used for building the custom defined behavior (keymap.dtsi)
+and the custom device-tree (device.dtsi) are the following two rake commands.
+The KB argument can be omitted, in which case it will default to the Glove80.
 
 ```bash
 rake KB=glove80
@@ -77,14 +81,14 @@ rake KB=go60
 
 ##### rake tasks
 
-The rake command is split into the following parts which can also be run 
-separately. If a change to the keymap code has been introuced, then the 
+The rake command is split into the following parts, which can also be run 
+separately. If a change to the keymap code has been introduced, then the 
 following could be used to build it.
 
 ```bash
 # Rake tasks
 # keymap -> Custom defined behavior
-# device -> Custom device tree
+# device -> Custom device-tree
 # dot -> Key press timing diagram
 # pdf -> Convertion of layout .png files to .pdf files (with a combined one)
 rake KB=glove80 keymap
@@ -107,7 +111,7 @@ configure them as a 'comboset'. This requires the creation of a file in
 `shared/combos` and `keyboards/{#KB}/combos` with the name `comboset[A-Z].dtsi.erb`.
 The file in shared is used in any keyboard if there are combinations that use
 the same keys. Note that the rows are offset by one between the glove80 and go60
-so the shared might have a limited utility. The files in the keyboards diretory
+so the shared might have a limited utility. The files in the keyboards directory
 are only used in the respective keyboard config (to handle the different layouts).
 
 To build a specific combo set, add the `COMBO` parameter:
@@ -115,6 +119,10 @@ To build a specific combo set, add the `COMBO` parameter:
 ```bash
 rake KB=glove80 COMBO=B keymap 
 ```
+
+Comboset folders:
+ - [Glove80](keyboards/glove80/combos)
+ - [Go60](keyboards/go60/combos)
 
 
 #### PDF keymap adjustments
@@ -131,16 +139,28 @@ similar).
 
 Replace `_` with the corresponding keyboard name (`glove80` or `go60`).
 
+Vector graphic templates:
+ - Glove80: [keyboards/glove80/util/glove80LayoutDescriptionTemplate.svg]
+ - Go60: [keyboards/go60/util/go60LayoutDescriptionTemplate.svg]
+
 #### Files used in build process
 
 
 The root for the build process is 'Rakefile'. It specifies the tasks and their
-procedures. To make adjustments, the most relevant files are the following:
+procedures. To make adjustments to the config, the most relevant files are the following:
 
 - keyboards/_/editorExports (.zmk and .json)
 - keyboards/_/combos/*      (keyboard specific combinations)
 - shared/combos             (combos that are valid on both devices)
 - keyboards/_/util/_LayoutDescriptionTemplate (Layer description generation)
+
+Replace `_` with the corresponding keyboard name (`glove80` or `go60`).
+
+To get a full picture, the following summarizes the project structure:
+The shared folder contains all the code that is universally applicable (all
+keyboards). There can be a file here that also exists in the keyboard specific
+directory. In that case both are used.
+
 
 ```
 shared
@@ -158,6 +178,10 @@ shared
 └── keymap.dtsi.erb
 ```
 
+The keyboard specific directory contains all configurations that differ between
+devices. The notable difference between the Glove80 and Go60 is the row shift
+and the reduced number of thumb keys.
+
 
 ```
 keyboards
@@ -173,9 +197,9 @@ keyboards
 │   ├── homeRowKeys.dtsi.erb
 │   ├── layerPNGs
 │   │   ├── name-layer-diagram.png
-    │   └── ...                // PNG files exported from _LayoutDescriptionTemplate.svg
+│   │   └── ...                // PNG files exported from _LayoutDescriptionTemplate.svg
 │   └── util
-│       └── glove80LayoutDescriptionTemplate.svg // svg containing all the layers for tha pdf
+│       └── glove80LayoutDescriptionTemplate.svg // svg containing all the layers for the pdf
 └── go60
     └── ...                    // Same as glove80 but from go60 editor
 ```
@@ -195,11 +219,11 @@ machines setup on an OS level with [NixOS](https://nixos.org/).
  - Structure change to improve abstraction and support of multiple keyboard types
  - Key adjustments to have the same layouts on both devices (R,X, special chars)
    with minimal changes compared to [GE v52](https://github.com/sunaku/glove80-keymaps)
- - A low use of combo keys resulted in a low priority in adjusting them, the 
-   current ones are not tested much. To allow you to easily introduce own sets,
-   the build allows for the creation of new config files to build include them
+ - A low use of combo keys resulted in low priority for adjusting them; the
+   current ones are not tested much. To allow you to easily introduce your own sets,
+   the build allows for the creation of new config files to easily include them
    simply by providing the `COMBO=_` argument.
-   See: [rake command options](rake-command-options)
+   See: [rake command options](#rake-command-options)
  - To quickly adjust the keymap pdf files, use the 
    `keyboard/_/util/_LayoutDescriptionTemplate.svg` to copy in a screenshot of
    your adjusted layer and export a png file to be included in the layer pdf.

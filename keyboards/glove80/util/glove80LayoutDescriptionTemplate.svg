@@ -10,7 +10,7 @@
    xml:space="preserve"
    inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
    sodipodi:docname="glove80LayoutDescriptionTemplate.svg"
-   inkscape:export-filename="../layerPNGs/system-layer-diagram.png"
+   inkscape:export-filename="../layerPNGs/emoji-layer-diagram.png"
    inkscape:export-xdpi="150"
    inkscape:export-ydpi="150"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
@@ -28,14 +28,14 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      inkscape:zoom="1.2899551"
-     inkscape:cx="834.52517"
-     inkscape:cy="293.42107"
-     inkscape:window-width="3440"
-     inkscape:window-height="1392"
+     inkscape:cx="648.85979"
+     inkscape:cy="200.00696"
+     inkscape:window-width="1600"
+     inkscape:window-height="975"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer3"
+     inkscape:current-layer="layer16"
      showguides="false"
      inkscape:export-bgcolor="#ffffffff" /><defs
      id="defs1"><rect
@@ -258,7 +258,12 @@
        y="648.08459"
        width="563.58551"
        height="72.095535"
-       id="rect16-1" /></defs><g
+       id="rect16-1" /><rect
+       x="418.61923"
+       y="127.13621"
+       width="358.61166"
+       height="91.930161"
+       id="rect69-7" /></defs><g
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="ThumbTextTempate(Hide)"
@@ -297,7 +302,7 @@
      inkscape:groupmode="layer"
      id="layer11"
      inkscape:label="Layer_System"
-     style="display:inline"><image
+     style="display:none"><image
        width="246.20105"
        height="109.06789"
        preserveAspectRatio="none"
@@ -316,9 +321,9 @@
        y="0"><tspan
          x="467.92485"
          y="157.39723"
-         id="tspan10"><tspan
+         id="tspan6"><tspan
            style="font-weight:bold"
-           id="tspan9">System  Layer</tspan></tspan></text></g><g
+           id="tspan4">System  Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer21"
      inkscape:label="Layer_Symbol"
@@ -341,9 +346,9 @@
        y="0"><tspan
          x="477.92484"
          y="157.39723"
-         id="tspan12"><tspan
+         id="tspan10"><tspan
            style="font-weight:bold"
-           id="tspan11">Symbol Layer</tspan></tspan></text></g><g
+           id="tspan9">Symbol Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer22"
      inkscape:label="Layer_World"
@@ -366,9 +371,9 @@
        y="0"><tspan
          x="477.92484"
          y="157.39723"
-         id="tspan21"><tspan
+         id="tspan12"><tspan
            style="font-weight:bold"
-           id="tspan20">World  Layer</tspan></tspan></text><text
+           id="tspan11">World  Layer</tspan></tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,2.7514262,0.37914316)"
        id="text16-1"
@@ -376,23 +381,23 @@
        inkscape:label="ZMKMacroHint"><tspan
          x="27.908203"
          y="661.39865"
-         id="tspan24"><tspan
+         id="tspan16"><tspan
            style="font-weight:bold"
-           id="tspan22">Note</tspan><tspan
+           id="tspan14">Note</tspan><tspan
            style="fill:#000000"
-           id="tspan23">
+           id="tspan15">
 </tspan></tspan><tspan
          x="27.908203"
          y="679.73203"
-         id="tspan26"><tspan
+         id="tspan18"><tspan
            style="fill:#000000"
-           id="tspan25">ZMK macros may require additional software for interpretation
+           id="tspan17">ZMK macros may require additional software for interpretation
 </tspan></tspan><tspan
          x="27.908203"
          y="698.0654"
-         id="tspan28"><tspan
+         id="tspan20"><tspan
            style="fill:#000000"
-           id="tspan27">See 'Unicode and Emoji' section in README.md</tspan></tspan></text><image
+           id="tspan19">See 'Unicode and Emoji' section in README.md</tspan></tspan></text><image
        width="53.931458"
        height="40.716805"
        preserveAspectRatio="xMidYMid"
@@ -423,13 +428,13 @@
        style="font-size:14.6667px;font-family:'Hasklug Nerd Font Mono';-inkscape-font-specification:'Hasklug Nerd Font Mono';writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect18);display:inline;fill:#000000"><tspan
          x="720.17969"
          y="703.26193"
-         id="tspan29">Hold or tap sticky modifiers on right half </tspan><tspan
+         id="tspan21">Hold or tap sticky modifiers on right half </tspan><tspan
          x="720.17969"
          y="721.59531"
-         id="tspan30">tu choose characters (referenced in the </tspan><tspan
+         id="tspan22">tu choose characters (referenced in the </tspan><tspan
          x="720.17969"
          y="739.92868"
-         id="tspan31">Legend) from the clusters on the left half.</tspan></text></g><g
+         id="tspan23">Legend) from the clusters on the left half.</tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer23"
      inkscape:label="Layer_Number"
@@ -452,9 +457,9 @@
        y="0"><tspan
          x="467.92485"
          y="157.39723"
-         id="tspan33"><tspan
+         id="tspan25"><tspan
            style="font-weight:bold"
-           id="tspan32">Number  Layer</tspan></tspan></text></g><g
+           id="tspan24">Number  Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer24"
      inkscape:label="Layer_Mouse"
@@ -477,9 +482,9 @@
        y="0"><tspan
          x="487.92484"
          y="157.39723"
-         id="tspan35"><tspan
+         id="tspan27"><tspan
            style="font-weight:bold"
-           id="tspan34">Mouse Layer</tspan></tspan></text></g><g
+           id="tspan26">Mouse Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer12"
      inkscape:label="Layer_Lower"
@@ -502,9 +507,9 @@
        y="0"><tspan
          x="477.92484"
          y="157.39723"
-         id="tspan37"><tspan
+         id="tspan29"><tspan
            style="font-weight:bold"
-           id="tspan36">Lower  Layer</tspan></tspan></text></g><g
+           id="tspan28">Lower  Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer13"
      inkscape:label="Layer_Gaming"
@@ -527,9 +532,9 @@
        y="0"><tspan
          x="467.92485"
          y="157.39723"
-         id="tspan39"><tspan
+         id="tspan31"><tspan
            style="font-weight:bold"
-           id="tspan38">Gaming  Layer</tspan></tspan></text></g><g
+           id="tspan30">Gaming  Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer14"
      inkscape:label="Layer_Function"
@@ -552,9 +557,9 @@
        y="0"><tspan
          x="447.92485"
          y="157.39723"
-         id="tspan41"><tspan
+         id="tspan33"><tspan
            style="font-weight:bold"
-           id="tspan40">Function  Layer</tspan></tspan></text></g><g
+           id="tspan32">Function  Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer15"
      inkscape:label="Layer_Factory"
@@ -577,9 +582,9 @@
        y="0"><tspan
          x="457.92485"
          y="157.39723"
-         id="tspan43"><tspan
+         id="tspan35"><tspan
            style="font-weight:bold"
-           id="tspan42">Factory  Layer</tspan></tspan></text></g><g
+           id="tspan34">Factory  Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer26"
      inkscape:label="Layer_Magic"
@@ -602,25 +607,13 @@
        y="0"><tspan
          x="477.92484"
          y="157.39723"
-         id="tspan45"><tspan
+         id="tspan37"><tspan
            style="font-weight:bold"
-           id="tspan44">Magic  Layer</tspan></tspan></text></g><g
+           id="tspan36">Magic  Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer10"
      inkscape:label="Layer_Emoji"
-     style="display:none"><text
-       xml:space="preserve"
-       transform="matrix(0.26458333,0,0,0.26458333,-13.934272,-16.791086)"
-       id="text69"
-       style="font-size:33.3333px;font-family:'Hasklug Nerd Font Mono';-inkscape-font-specification:'Hasklug Nerd Font Mono';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect69);display:inline;fill:#000000"
-       inkscape:label="Emoji"
-       x="179.30583"
-       y="0"><tspan
-         x="487.92484"
-         y="157.39723"
-         id="tspan47"><tspan
-           style="font-weight:bold"
-           id="tspan46">Emoji Layer</tspan></tspan></text><image
+     style="display:inline"><image
        width="243.95697"
        height="122.51307"
        preserveAspectRatio="xMidYMid"
@@ -637,23 +630,35 @@
        inkscape:label="ZMKMacroHint"><tspan
          x="27.908203"
          y="661.39865"
-         id="tspan50"><tspan
+         id="tspan40"><tspan
            style="font-weight:bold"
-           id="tspan48">Note</tspan><tspan
+           id="tspan38">Note</tspan><tspan
            style="fill:#000000"
-           id="tspan49">
+           id="tspan39">
 </tspan></tspan><tspan
          x="27.908203"
          y="679.73203"
-         id="tspan52"><tspan
+         id="tspan42"><tspan
            style="fill:#000000"
-           id="tspan51">ZMK macros may require additional software for interpretation
+           id="tspan41">ZMK macros may require additional software for interpretation
 </tspan></tspan><tspan
          x="27.908203"
          y="698.0654"
-         id="tspan54"><tspan
+         id="tspan44"><tspan
            style="fill:#000000"
-           id="tspan53">See 'Unicode and Emoji' section in README.md</tspan></tspan></text></g><g
+           id="tspan43">See 'Unicode and Emoji' section in README.md</tspan></tspan></text><text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-12.202281,-16.765804)"
+       id="text69"
+       style="font-size:33.3333px;font-family:'Hasklug Nerd Font Mono';-inkscape-font-specification:'Hasklug Nerd Font Mono';text-align:center;writing-mode:lr-tb;direction:ltr;white-space:pre;shape-inside:url(#rect69-7);display:inline;fill:#000000"
+       inkscape:label="Emoji"
+       x="179.30583"
+       y="0"><tspan
+         x="487.92484"
+         y="157.39723"
+         id="tspan46"><tspan
+           style="font-weight:bold"
+           id="tspan45">Emoji Layer</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer16"
      inkscape:label="Layer_Cursor"
@@ -676,9 +681,9 @@
        y="0"><tspan
          x="467.92485"
          y="157.39723"
-         id="tspan56"><tspan
+         id="tspan48"><tspan
            style="font-weight:bold"
-           id="tspan55">Cursor  Layer
+           id="tspan47">Cursor  Layer
 </tspan></tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,0.61533148,1.640884)"
@@ -687,22 +692,22 @@
        inkscape:label="RHThumbs"><tspan
          x="696.14844"
          y="508.77647"
-         id="tspan58"><tspan
+         id="tspan50"><tspan
    style="font-weight:bold"
-   id="tspan57">Notes</tspan>
+   id="tspan49">Notes</tspan>
 </tspan><tspan
          x="696.14844"
          y="530.44309"
-         id="tspan60"><tspan
+         id="tspan52"><tspan
    style="fill:#0000ff"
-   id="tspan59">RH Thumb keys</tspan>
+   id="tspan51">RH Thumb keys</tspan>
 </tspan><tspan
          x="696.14844"
          y="552.10972"
-         id="tspan61">Pascal Getreuer's Select Word </tspan><tspan
+         id="tspan53">Pascal Getreuer's Select Word </tspan><tspan
          x="696.14844"
          y="573.77634"
-         id="tspan62">macro approrimation</tspan></text></g><g
+         id="tspan54">macro approrimation</tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer17"
      inkscape:label="Base3_QWERTY"
@@ -725,15 +730,15 @@
        y="0"><tspan
          x="487.92484"
          y="157.39723"
-         id="tspan64"><tspan
+         id="tspan56"><tspan
            style="font-weight:bold"
-           id="tspan63">Base  Layer
+           id="tspan55">Base  Layer
 </tspan></tspan><tspan
          x="533.92468"
          y="199.06386"
-         id="tspan66"><tspan
+         id="tspan58"><tspan
            style="font-size:26.6667px"
-           id="tspan65">(QWERTY)</tspan></tspan></text></g><g
+           id="tspan57">(QWERTY)</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer18"
      inkscape:label="Base2_Colemak"
@@ -756,15 +761,15 @@
        y="0"><tspan
          x="487.92484"
          y="157.39723"
-         id="tspan68"><tspan
+         id="tspan60"><tspan
            style="font-weight:bold"
-           id="tspan67">Base  Layer
+           id="tspan59">Base  Layer
 </tspan></tspan><tspan
          x="525.92467"
          y="199.06386"
-         id="tspan70"><tspan
+         id="tspan62"><tspan
            style="font-size:26.6667px"
-           id="tspan69">(Colemak)</tspan></tspan></text></g><g
+           id="tspan61">(Colemak)</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer19"
      inkscape:label="Base1_Dvorak"
@@ -787,15 +792,15 @@
        y="0"><tspan
          x="487.92484"
          y="157.39723"
-         id="tspan72"><tspan
+         id="tspan64"><tspan
            style="font-weight:bold"
-           id="tspan71">Base  Layer
+           id="tspan63">Base  Layer
 </tspan></tspan><tspan
          x="533.92468"
          y="199.06386"
-         id="tspan74"><tspan
+         id="tspan66"><tspan
            style="font-size:26.6667px"
-           id="tspan73">(Dvorak)</tspan></tspan></text></g><g
+           id="tspan65">(Dvorak)</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer20"
      inkscape:label="Base0_Enthium"
@@ -818,15 +823,15 @@
        y="0"><tspan
          x="487.92484"
          y="157.39723"
-         id="tspan76"><tspan
+         id="tspan68"><tspan
            style="font-weight:bold"
-           id="tspan75">Base  Layer
+           id="tspan67">Base  Layer
 </tspan></tspan><tspan
          x="461.92455"
          y="199.06386"
-         id="tspan78"><tspan
+         id="tspan70"><tspan
            style="font-size:26.6667px"
-           id="tspan77">(Enthium generic)</tspan></tspan></text></g><g
+           id="tspan69">(Enthium generic)</tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Cover"
@@ -854,21 +859,21 @@
        y="0"><tspan
          x="434.13077"
          y="247.86686"
-         id="tspan80"><tspan
+         id="tspan72"><tspan
    style="fill:#0000ff"
-   id="tspan79">Miryoku</tspan> layers &amp; home row mods
+   id="tspan71">Miryoku</tspan> layers &amp; home row mods
 </tspan><tspan
          x="458.13078"
          y="267.86686"
-         id="tspan82"><tspan
+         id="tspan74"><tspan
    style="fill:#0000ff"
-   id="tspan81">Glorious Engrammer</tspan> keymap
+   id="tspan73">Glorious Engrammer</tspan> keymap
 </tspan><tspan
          x="462.93079"
          y="287.86686"
-         id="tspan84">See <tspan
+         id="tspan76">See <tspan
    style="fill:#0000ff"
-   id="tspan83">is.gd/sunaku_glove80</tspan></tspan></text><text
+   id="tspan75">is.gd/sunaku_glove80</tspan></tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-8.754966,-14.095496)"
        id="text12"
@@ -876,7 +881,7 @@
        inkscape:label="KeyboardName"><tspan
          x="458.93164"
          y="234.34678"
-         id="tspan85">MoErgo Glove80 keyboard</tspan></text></g><g
+         id="tspan77">MoErgo Glove80 keyboard</tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="LayoutPosTextOverlay"
@@ -889,9 +894,9 @@
        inkscape:label="LH_Columns"><tspan
          x="63.587891"
          y="54.448747"
-         id="tspan87"><tspan
+         id="tspan79"><tspan
            style="font-family:'Hasklug Nerd Font Mono';-inkscape-font-specification:'Hasklug Nerd Font Mono'"
-           id="tspan86">C6  C5  C4  C3  C2  C1</tspan></tspan></text><text
+           id="tspan78">C6  C5  C4  C3  C2  C1</tspan></tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,172.18116,-3.15208)"
        id="text1-0"
@@ -899,9 +904,9 @@
        inkscape:label="RH_Columns"><tspan
          x="63.587891"
          y="54.448747"
-         id="tspan89"><tspan
+         id="tspan81"><tspan
            style="font-family:'Hasklug Nerd Font Mono';-inkscape-font-specification:'Hasklug Nerd Font Mono'"
-           id="tspan88">C1  C2  C3  C4  C5  C6</tspan></tspan></text><text
+           id="tspan80">C1  C2  C3  C4  C5  C6</tspan></tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,2.6142928,-4.3547129)"
        id="text2"
@@ -909,47 +914,47 @@
        inkscape:label="RH_Rows"><tspan
          x="1028.3555"
          y="123.51711"
-         id="tspan90">R1
+         id="tspan82">R1
 </tspan><tspan
          x="1028.3555"
          y="150.18373"
-         id="tspan91">
+         id="tspan83">
 </tspan><tspan
          x="1028.3555"
          y="176.85036"
-         id="tspan92">R2
+         id="tspan84">R2
 </tspan><tspan
          x="1028.3555"
          y="203.51698"
-         id="tspan93">
+         id="tspan85">
 </tspan><tspan
          x="1028.3555"
          y="230.18361"
-         id="tspan94">R3
+         id="tspan86">R3
 </tspan><tspan
          x="1028.3555"
          y="256.85024"
-         id="tspan95">
+         id="tspan87">
 </tspan><tspan
          x="1028.3555"
          y="283.51686"
-         id="tspan96">R4
+         id="tspan88">R4
 </tspan><tspan
          x="1028.3555"
          y="310.18349"
-         id="tspan97">
+         id="tspan89">
 </tspan><tspan
          x="1028.3555"
          y="336.85011"
-         id="tspan98">R5
+         id="tspan268">R5
 </tspan><tspan
          x="1028.3555"
          y="363.51674"
-         id="tspan99">
+         id="tspan269">
 </tspan><tspan
          x="1028.3555"
          y="390.18337"
-         id="tspan100">R6</tspan></text><text
+         id="tspan270">R6</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-264.43688,-4.1541485)"
        id="text2-2"
@@ -957,47 +962,47 @@
        inkscape:label="RH_Rows"><tspan
          x="1028.3555"
          y="123.51711"
-         id="tspan101">R1
+         id="tspan271">R1
 </tspan><tspan
          x="1028.3555"
          y="150.18373"
-         id="tspan102">
+         id="tspan272">
 </tspan><tspan
          x="1028.3555"
          y="176.85036"
-         id="tspan103">R2
+         id="tspan273">R2
 </tspan><tspan
          x="1028.3555"
          y="203.51698"
-         id="tspan104">
+         id="tspan274">
 </tspan><tspan
          x="1028.3555"
          y="230.18361"
-         id="tspan105">R3
+         id="tspan275">R3
 </tspan><tspan
          x="1028.3555"
          y="256.85024"
-         id="tspan106">
+         id="tspan276">
 </tspan><tspan
          x="1028.3555"
          y="283.51686"
-         id="tspan107">R4
+         id="tspan277">R4
 </tspan><tspan
          x="1028.3555"
          y="310.18349"
-         id="tspan108">
+         id="tspan278">
 </tspan><tspan
          x="1028.3555"
          y="336.85011"
-         id="tspan109">R5
+         id="tspan279">R5
 </tspan><tspan
          x="1028.3555"
          y="363.51674"
-         id="tspan110">
+         id="tspan280">
 </tspan><tspan
          x="1028.3555"
          y="390.18337"
-         id="tspan111">R6</tspan></text><text
+         id="tspan281">R6</tspan></text><text
        xml:space="preserve"
        id="text5"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.64444px;font-family:'Hasklug Nerd Font Mono';-inkscape-font-specification:'Hasklug Nerd Font Mono';writing-mode:lr-tb;direction:ltr;white-space:pre;fill:#b3b3b3"
@@ -1041,7 +1046,7 @@
        inkscape:label="LH"><tspan
          x="72.871094"
          y="496.79312"
-         id="tspan112">LH</tspan></text><text
+         id="tspan282">LH</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,204.90538,-14.123066)"
        id="text10"
@@ -1049,7 +1054,7 @@
        inkscape:label="RH"><tspan
          x="72.871094"
          y="496.79312"
-         id="tspan113">RH</tspan></text></g><g
+         id="tspan283">RH</tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="CombosA (BaseLayer)"
@@ -1062,77 +1067,77 @@
        inkscape:label="CombosLH"><tspan
          x="43.412109"
          y="585.76825"
-         id="tspan115"><tspan
+         id="tspan285"><tspan
    style="font-weight:bold"
-   id="tspan114">Combos LH</tspan>
+   id="tspan284">Combos LH</tspan>
 </tspan><tspan
          x="43.412109"
          y="602.43487"
-         id="tspan117"><tspan
+         id="tspan287"><tspan
    style="fill:#0000ff"
-   id="tspan116">Sticky keys</tspan>
+   id="tspan286">Sticky keys</tspan>
 </tspan><tspan
          x="43.412109"
          y="619.1015"
-         id="tspan118">T2-T3     -&gt; Globe (sticky)
+         id="tspan288">T2-T3     -&gt; Globe (sticky)
 </tspan><tspan
          x="43.412109"
          y="635.76813"
-         id="tspan119">T1-T2     -&gt; AltGr (sticky)
+         id="tspan289">T1-T2     -&gt; AltGr (sticky)
 </tspan><tspan
          x="43.412109"
          y="652.43475"
-         id="tspan121"><tspan
+         id="tspan291"><tspan
    style="fill:#0000ff"
-   id="tspan120">Tab switching</tspan>
+   id="tspan290">Tab switching</tspan>
 </tspan><tspan
          x="43.412109"
          y="669.10138"
-         id="tspan122">T1-T4     -&gt; Alt Tab →
+         id="tspan292">T1-T4     -&gt; Alt Tab →
 </tspan><tspan
          x="43.412109"
          y="685.768"
-         id="tspan123">T2-T5     -&gt; Ctrl Tab →
+         id="tspan293">T2-T5     -&gt; Ctrl Tab →
 </tspan><tspan
          x="43.412109"
          y="702.43463"
-         id="tspan124">T3-T6     -&gt; Win Tab →
+         id="tspan294">T3-T6     -&gt; Win Tab →
 </tspan><tspan
          x="43.412109"
          y="719.10126"
-         id="tspan126"><tspan
+         id="tspan296"><tspan
    style="fill:#0000ff"
-   id="tspan125">Shift / caps</tspan>
+   id="tspan295">Shift / caps</tspan>
 </tspan><tspan
          x="43.412109"
          y="735.76788"
-         id="tspan127">T1-T5     -&gt; Shift (sticky)
+         id="tspan297">T1-T5     -&gt; Shift (sticky)
 </tspan><tspan
          x="43.412109"
          y="752.43451"
-         id="tspan128">T4-T5     -&gt; Caps Word
+         id="tspan298">T4-T5     -&gt; Caps Word
 </tspan><tspan
          x="43.412109"
          y="769.10113"
-         id="tspan129">T2-T6     -&gt; Caps Lock
+         id="tspan299">T2-T6     -&gt; Caps Lock
 </tspan><tspan
          x="43.412109"
          y="785.76776"
-         id="tspan131"><tspan
+         id="tspan301"><tspan
    style="fill:#0000ff"
-   id="tspan130">Layer access</tspan>
+   id="tspan300">Layer access</tspan>
 </tspan><tspan
          x="43.412109"
          y="802.43439"
-         id="tspan132">T5-T6     -&gt; Typing layer
+         id="tspan302">T5-T6     -&gt; Typing layer
 </tspan><tspan
          x="43.412109"
          y="819.10101"
-         id="tspan133">C1R5-C2R6 -&gt; Gaming layer
+         id="tspan303">C1R5-C2R6 -&gt; Gaming layer
 </tspan><tspan
          x="43.412109"
          y="835.76764"
-         id="tspan134">T1-T2-T3  -&gt; Base layer reset</tspan></text><text
+         id="tspan304">T1-T2-T3  -&gt; Base layer reset</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,69.848548,-22.760995)"
        id="text41-4"
@@ -1140,69 +1145,69 @@
        inkscape:label="CombosMixed"><tspan
          x="43.412109"
          y="586.97873"
-         id="tspan136"><tspan
+         id="tspan306"><tspan
    style="font-weight:bold"
-   id="tspan135">Combos (either side)</tspan>
+   id="tspan305">Combos (either side)</tspan>
 </tspan><tspan
          x="43.412109"
          y="605.31211"
-         id="tspan138"><tspan
+         id="tspan308"><tspan
    style="fill:#0000ff"
-   id="tspan137">Tab forward</tspan>
+   id="tspan307">Tab forward</tspan>
 </tspan><tspan
          x="43.412109"
          y="623.64548"
-         id="tspan139">LT1-RT3 -&gt; Ctrl Tab →
+         id="tspan309">LT1-RT3 -&gt; Ctrl Tab →
 </tspan><tspan
          x="43.412109"
          y="641.97885"
-         id="tspan140">LT1-RT2 -&gt; Alt Tab →
+         id="tspan310">LT1-RT2 -&gt; Alt Tab →
 </tspan><tspan
          x="43.412109"
          y="660.31223"
-         id="tspan141">LT1-RT1 -&gt; Win Tab →
+         id="tspan311">LT1-RT1 -&gt; Win Tab →
 </tspan><tspan
          x="43.412109"
          y="678.6456"
-         id="tspan143"><tspan
+         id="tspan313"><tspan
    style="fill:#0000ff"
-   id="tspan142">Tab reverse</tspan>
+   id="tspan312">Tab reverse</tspan>
 </tspan><tspan
          x="43.412109"
          y="696.97898"
-         id="tspan144">LT2-RT3 -&gt; Ctrl Tab ←
+         id="tspan314">LT2-RT3 -&gt; Ctrl Tab ←
 </tspan><tspan
          x="43.412109"
          y="715.31235"
-         id="tspan145">LT2-RT2 -&gt; Alt Tab ←
+         id="tspan315">LT2-RT2 -&gt; Alt Tab ←
 </tspan><tspan
          x="43.412109"
          y="733.64572"
-         id="tspan146">LT2-RT1 -&gt; Win Tab ←
+         id="tspan316">LT2-RT1 -&gt; Win Tab ←
 </tspan><tspan
          x="43.412109"
          y="751.9791"
-         id="tspan148"><tspan
+         id="tspan318"><tspan
    style="fill:#0000ff"
-   id="tspan147">Shift / caps</tspan>
+   id="tspan317">Shift / caps</tspan>
 </tspan><tspan
          x="43.412109"
          y="770.31247"
-         id="tspan149">LT3-RT3 -&gt; Shift (sticky)
+         id="tspan319">LT3-RT3 -&gt; Shift (sticky)
 </tspan><tspan
          x="43.412109"
          y="788.64585"
-         id="tspan150">LT3-RT2 -&gt; Caps Word
+         id="tspan320">LT3-RT2 -&gt; Caps Word
 </tspan><tspan
          x="43.412109"
          y="806.97922"
-         id="tspan151">LT3-RT1 -&gt; Caps Lock
+         id="tspan321">LT3-RT1 -&gt; Caps Lock
 </tspan><tspan
          x="43.412109"
          y="825.31259"
-         id="tspan153"><tspan
+         id="tspan323"><tspan
            style="fill:#ffb380"
-           id="tspan152">(Default combo set A)</tspan></tspan></text><text
+           id="tspan322">(Default combo set A)</tspan></tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,129.70876,-22.562241)"
        id="text41-4-4"
@@ -1210,77 +1215,77 @@
        inkscape:label="CombosRH"><tspan
          x="43.412109"
          y="586.97873"
-         id="tspan155"><tspan
+         id="tspan325"><tspan
    style="font-weight:bold"
-   id="tspan154">Combos RH</tspan>
+   id="tspan324">Combos RH</tspan>
 </tspan><tspan
          x="43.412109"
          y="605.31211"
-         id="tspan157"><tspan
+         id="tspan327"><tspan
    style="fill:#0000ff"
-   id="tspan156">Sticky keys</tspan>
+   id="tspan326">Sticky keys</tspan>
 </tspan><tspan
          x="43.412109"
          y="623.64548"
-         id="tspan158">T2-T3    -&gt; Globe (sticky)
+         id="tspan328">T2-T3    -&gt; Globe (sticky)
 </tspan><tspan
          x="43.412109"
          y="641.97885"
-         id="tspan159">T1-T2    -&gt; AltGr (sticky)
+         id="tspan329">T1-T2    -&gt; AltGr (sticky)
 </tspan><tspan
          x="43.412109"
          y="660.31223"
-         id="tspan161"><tspan
+         id="tspan331"><tspan
    style="fill:#0000ff"
-   id="tspan160">Modifier chords</tspan>
+   id="tspan330">Modifier chords</tspan>
 </tspan><tspan
          x="43.412109"
          y="678.6456"
-         id="tspan162">T1-T4 -&gt; Hyper (Shift-Ctrl-Alt-Win)
+         id="tspan332">T1-T4 -&gt; Hyper (Shift-Ctrl-Alt-Win)
 </tspan><tspan
          x="43.412109"
          y="696.97898"
-         id="tspan163">T2-T5 -&gt; Meh   (Shift-Ctrl-Alt)
+         id="tspan333">T2-T5 -&gt; Meh   (Shift-Ctrl-Alt)
 </tspan><tspan
          x="43.412109"
          y="715.31235"
-         id="tspan164">T3-T6 -&gt; Turbo (Shift-Ctrl)
+         id="tspan334">T3-T6 -&gt; Turbo (Shift-Ctrl)
 </tspan><tspan
          x="43.412109"
          y="733.64572"
-         id="tspan166"><tspan
+         id="tspan336"><tspan
    style="fill:#0000ff"
-   id="tspan165">Shift / caps</tspan>
+   id="tspan335">Shift / caps</tspan>
 </tspan><tspan
          x="43.412109"
          y="751.9791"
-         id="tspan167">T1-T5 -&gt; Shift (sticky)
+         id="tspan337">T1-T5 -&gt; Shift (sticky)
 </tspan><tspan
          x="43.412109"
          y="770.31247"
-         id="tspan168">T4-T5 -&gt; Caps Word
+         id="tspan338">T4-T5 -&gt; Caps Word
 </tspan><tspan
          x="43.412109"
          y="788.64585"
-         id="tspan169">T2-T6 -&gt; Caps Lock
+         id="tspan339">T2-T6 -&gt; Caps Lock
 </tspan><tspan
          x="43.412109"
          y="806.97922"
-         id="tspan171"><tspan
+         id="tspan341"><tspan
    style="fill:#0000ff"
-   id="tspan170">Layer access</tspan>
+   id="tspan340">Layer access</tspan>
 </tspan><tspan
          x="43.412109"
          y="825.31259"
-         id="tspan172">T5-T6     -&gt; Typing layer
+         id="tspan342">T5-T6     -&gt; Typing layer
 </tspan><tspan
          x="43.412109"
          y="843.64597"
-         id="tspan173">C1R5-C2R6 -&gt; Typing layer
+         id="tspan343">C1R5-C2R6 -&gt; Typing layer
 </tspan><tspan
          x="43.412109"
          y="861.97934"
-         id="tspan174">T1-T2-T3 -&gt; Base layer reset</tspan></text></g><g
+         id="tspan344">T1-T2-T3 -&gt; Base layer reset</tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="CombosB (BaseLayer)"
@@ -1293,73 +1298,73 @@
        inkscape:label="CombosLH"><tspan
          x="43.412109"
          y="586.97873"
-         id="tspan176"><tspan
+         id="tspan346"><tspan
    style="font-weight:bold"
-   id="tspan175">Combos LH</tspan>
+   id="tspan345">Combos LH</tspan>
 </tspan><tspan
          x="43.412109"
          y="605.31211"
-         id="tspan178"><tspan
+         id="tspan348"><tspan
    style="fill:#0000ff"
-   id="tspan177">Sticky keys</tspan>
+   id="tspan347">Sticky keys</tspan>
 </tspan><tspan
          x="43.412109"
          y="623.64548"
-         id="tspan179">T2-T3    -&gt; Globe (sticky)
+         id="tspan349">T2-T3    -&gt; Globe (sticky)
 </tspan><tspan
          x="43.412109"
          y="641.97885"
-         id="tspan180">T1-T2    -&gt; AltGr (sticky)
+         id="tspan350">T1-T2    -&gt; AltGr (sticky)
 </tspan><tspan
          x="43.412109"
          y="660.31223"
-         id="tspan181">T1-T2-T3 -&gt; Base layer reset
+         id="tspan351">T1-T2-T3 -&gt; Base layer reset
 </tspan><tspan
          x="43.412109"
          y="678.6456"
-         id="tspan183"><tspan
+         id="tspan353"><tspan
    style="fill:#0000ff"
-   id="tspan182">Tab switching</tspan>
+   id="tspan352">Tab switching</tspan>
 </tspan><tspan
          x="43.412109"
          y="696.97898"
-         id="tspan184">T1-C1R5 -&gt; Alt Tab →
+         id="tspan354">T1-C1R5 -&gt; Alt Tab →
 </tspan><tspan
          x="43.412109"
          y="715.31235"
-         id="tspan185">T2-C2R6 -&gt; Ctrl Tab →
+         id="tspan355">T2-C2R6 -&gt; Ctrl Tab →
 </tspan><tspan
          x="43.412109"
          y="733.64572"
-         id="tspan186">T3-C1R5 -&gt; Win Tab →
+         id="tspan356">T3-C1R5 -&gt; Win Tab →
 </tspan><tspan
          x="43.412109"
          y="751.9791"
-         id="tspan188"><tspan
+         id="tspan358"><tspan
    style="fill:#0000ff"
-   id="tspan187">Shift / caps</tspan>
+   id="tspan357">Shift / caps</tspan>
 </tspan><tspan
          x="43.412109"
          y="770.31247"
-         id="tspan189">T1-C2R6 -&gt; Shift (sticky)
+         id="tspan359">T1-C2R6 -&gt; Shift (sticky)
 </tspan><tspan
          x="43.412109"
          y="788.64585"
-         id="tspan190">T2-C1R5 -&gt; Caps Lock
+         id="tspan360">T2-C1R5 -&gt; Caps Lock
 </tspan><tspan
          x="43.412109"
          y="806.97922"
-         id="tspan192"><tspan
+         id="tspan362"><tspan
    style="fill:#0000ff"
-   id="tspan191">Layer access</tspan>
+   id="tspan361">Layer access</tspan>
 </tspan><tspan
          x="43.412109"
          y="825.31259"
-         id="tspan193">T3-C2R6   -&gt; Typing layer
+         id="tspan363">T3-C2R6   -&gt; Typing layer
 </tspan><tspan
          x="43.412109"
          y="843.64597"
-         id="tspan194">C1R5-C2R6 -&gt; Gaming layer on/off</tspan></text><text
+         id="tspan364">C1R5-C2R6 -&gt; Gaming layer on/off</tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,102.31956,-26.276536)"
        id="text41-4-9"
@@ -1367,69 +1372,69 @@
        inkscape:label="CombosMixed"><tspan
          x="43.412109"
          y="589.39951"
-         id="tspan196"><tspan
+         id="tspan366"><tspan
    style="font-weight:bold;font-size:17.3333px"
-   id="tspan195">Combos (either side)</tspan>
+   id="tspan365">Combos (either side)</tspan>
 </tspan><tspan
          x="43.412109"
          y="609.85575"
-         id="tspan198"><tspan
+         id="tspan368"><tspan
    style="fill:#0000ff"
-   id="tspan197">Tab forward</tspan>
+   id="tspan367">Tab forward</tspan>
 </tspan><tspan
          x="43.412109"
          y="629.85575"
-         id="tspan199">LT1-RT3 -&gt; Ctrl Tab →
+         id="tspan369">LT1-RT3 -&gt; Ctrl Tab →
 </tspan><tspan
          x="43.412109"
          y="649.85575"
-         id="tspan200">LT1-RT2 -&gt; Alt Tab →
+         id="tspan370">LT1-RT2 -&gt; Alt Tab →
 </tspan><tspan
          x="43.412109"
          y="669.85575"
-         id="tspan201">LT1-RT1 -&gt; Win Tab →
+         id="tspan371">LT1-RT1 -&gt; Win Tab →
 </tspan><tspan
          x="43.412109"
          y="689.85575"
-         id="tspan203"><tspan
+         id="tspan373"><tspan
    style="fill:#0000ff"
-   id="tspan202">Tab reverse</tspan>
+   id="tspan372">Tab reverse</tspan>
 </tspan><tspan
          x="43.412109"
          y="709.85575"
-         id="tspan204">LT2-RT3 -&gt; Ctrl Tab ←
+         id="tspan374">LT2-RT3 -&gt; Ctrl Tab ←
 </tspan><tspan
          x="43.412109"
          y="729.85575"
-         id="tspan205">LT2-RT2 -&gt; Alt Tab ←
+         id="tspan375">LT2-RT2 -&gt; Alt Tab ←
 </tspan><tspan
          x="43.412109"
          y="749.85575"
-         id="tspan206">LT2-RT1 -&gt; Win Tab ←
+         id="tspan376">LT2-RT1 -&gt; Win Tab ←
 </tspan><tspan
          x="43.412109"
          y="769.85575"
-         id="tspan208"><tspan
+         id="tspan378"><tspan
    style="fill:#0000ff"
-   id="tspan207">Shift / caps</tspan>
+   id="tspan377">Shift / caps</tspan>
 </tspan><tspan
          x="43.412109"
          y="789.85575"
-         id="tspan209">LT3-RT3 -&gt; Shift (sticky)
+         id="tspan379">LT3-RT3 -&gt; Shift (sticky)
 </tspan><tspan
          x="43.412109"
          y="809.85575"
-         id="tspan210">LT3-RT2 -&gt; Caps Word
+         id="tspan380">LT3-RT2 -&gt; Caps Word
 </tspan><tspan
          x="43.412109"
          y="829.85575"
-         id="tspan211">LT3-RT1 -&gt; Caps Lock
+         id="tspan381">LT3-RT1 -&gt; Caps Lock
 </tspan><tspan
          x="43.412109"
          y="849.85575"
-         id="tspan213"><tspan
+         id="tspan383"><tspan
            style="fill:#ffb380"
-           id="tspan212">(combo set B)</tspan></tspan></text><text
+           id="tspan382">(combo set B)</tspan></tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,195.2236,-26.947992)"
        id="text41-4-4-1"
@@ -1437,73 +1442,73 @@
        inkscape:label="CombosRH"><tspan
          x="43.412109"
          y="586.97873"
-         id="tspan215"><tspan
+         id="tspan385"><tspan
    style="font-weight:bold"
-   id="tspan214">Combos RH</tspan>
+   id="tspan384">Combos RH</tspan>
 </tspan><tspan
          x="43.412109"
          y="605.31211"
-         id="tspan217"><tspan
+         id="tspan387"><tspan
    style="fill:#0000ff"
-   id="tspan216">Sticky keys</tspan>
+   id="tspan386">Sticky keys</tspan>
 </tspan><tspan
          x="43.412109"
          y="623.64548"
-         id="tspan218">T2-T3    -&gt; Globe (sticky)
+         id="tspan388">T2-T3    -&gt; Globe (sticky)
 </tspan><tspan
          x="43.412109"
          y="641.97885"
-         id="tspan219">T1-T2    -&gt; AltGr (sticky)
+         id="tspan389">T1-T2    -&gt; AltGr (sticky)
 </tspan><tspan
          x="43.412109"
          y="660.31223"
-         id="tspan220">T1-T2-T3 -&gt; Base layer reset
+         id="tspan390">T1-T2-T3 -&gt; Base layer reset
 </tspan><tspan
          x="43.412109"
          y="678.6456"
-         id="tspan222"><tspan
+         id="tspan392"><tspan
    style="fill:#0000ff"
-   id="tspan221">Modifier chords</tspan>
+   id="tspan391">Modifier chords</tspan>
 </tspan><tspan
          x="43.412109"
          y="696.97898"
-         id="tspan223">T1-C1R5 -&gt; Hyper (Shift-Ctrl-Alt-Win)
+         id="tspan393">T1-C1R5 -&gt; Hyper (Shift-Ctrl-Alt-Win)
 </tspan><tspan
          x="43.412109"
          y="715.31235"
-         id="tspan224">T2-C2R6 -&gt; Meh   (Shift-Ctrl-Alt)
+         id="tspan394">T2-C2R6 -&gt; Meh   (Shift-Ctrl-Alt)
 </tspan><tspan
          x="43.412109"
          y="733.64572"
-         id="tspan225">T3-C1R5 -&gt; Turbo (Shift-Ctrl)
+         id="tspan395">T3-C1R5 -&gt; Turbo (Shift-Ctrl)
 </tspan><tspan
          x="43.412109"
          y="751.9791"
-         id="tspan227"><tspan
+         id="tspan397"><tspan
    style="fill:#0000ff"
-   id="tspan226">Shift / caps</tspan>
+   id="tspan396">Shift / caps</tspan>
 </tspan><tspan
          x="43.412109"
          y="770.31247"
-         id="tspan228">T1-C2R6 -&gt; Shift (sticky)
+         id="tspan398">T1-C2R6 -&gt; Shift (sticky)
 </tspan><tspan
          x="43.412109"
          y="788.64585"
-         id="tspan229">T2-C1R5 -&gt; Caps Lock
+         id="tspan399">T2-C1R5 -&gt; Caps Lock
 </tspan><tspan
          x="43.412109"
          y="806.97922"
-         id="tspan231"><tspan
+         id="tspan401"><tspan
    style="fill:#0000ff"
-   id="tspan230">Layer access</tspan>
+   id="tspan400">Layer access</tspan>
 </tspan><tspan
          x="43.412109"
          y="825.31259"
-         id="tspan232">T3-C2R6   -&gt; Typing layer
+         id="tspan402">T3-C2R6   -&gt; Typing layer
 </tspan><tspan
          x="43.412109"
          y="843.64597"
-         id="tspan233">C1R5-C2R6 -&gt; Typing layer on/off</tspan></text></g><g
+         id="tspan403">C1R5-C2R6 -&gt; Typing layer on/off</tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer27"
      inkscape:label="LayerActivations (Base Layer)"
@@ -1598,81 +1603,81 @@
        inkscape:label="LayerText"><tspan
          x="897.47684"
          y="528.06076"
-         id="tspan235"><tspan
+         id="tspan405"><tspan
            style="font-weight:bold"
-           id="tspan234">Layer Activations (Hold)
+           id="tspan404">Layer Activations (Hold)
 </tspan></tspan><tspan
          x="1003.0771"
          y="546.39414"
-         id="tspan237"><tspan
+         id="tspan407"><tspan
            style="font-weight:bold"
-           id="tspan236">
+           id="tspan406">
 </tspan></tspan><tspan
          x="961.4772"
          y="567.14829"
-         id="tspan239"><tspan
+         id="tspan409"><tspan
            style="font-size:17.3333px"
-           id="tspan238">Cursor  
+           id="tspan408">Cursor  
 </tspan></tspan><tspan
          x="940.67723"
          y="588.81492"
-         id="tspan241"><tspan
+         id="tspan411"><tspan
            style="font-size:17.3333px"
-           id="tspan240">      Number
+           id="tspan410">      Number
 </tspan></tspan><tspan
          x="919.87726"
          y="610.48154"
-         id="tspan243"><tspan
+         id="tspan413"><tspan
            style="font-size:17.3333px"
-           id="tspan242">    Function    
+           id="tspan412">    Function    
 </tspan></tspan><tspan
          x="1003.0771"
          y="632.14817"
-         id="tspan245"><tspan
+         id="tspan415"><tspan
            style="font-size:17.3333px"
-           id="tspan244">
+           id="tspan414">
 </tspan></tspan><tspan
          x="951.07722"
          y="653.8148"
-         id="tspan247"><tspan
+         id="tspan417"><tspan
            style="font-size:17.3333px"
-           id="tspan246">    System
+           id="tspan416">    System
 </tspan></tspan><tspan
          x="925.07725"
          y="675.48142"
-         id="tspan249"><tspan
+         id="tspan419"><tspan
            style="font-size:17.3333px"
-           id="tspan248">    Mouse      
+           id="tspan418">    Mouse      
 </tspan></tspan><tspan
          x="951.07722"
          y="697.14805"
-         id="tspan251"><tspan
+         id="tspan421"><tspan
            style="font-size:17.3333px"
-           id="tspan250">    Symbol
+           id="tspan420">    Symbol
 </tspan></tspan><tspan
          x="1003.0771"
          y="718.81467"
-         id="tspan253"><tspan
+         id="tspan423"><tspan
            style="font-size:17.3333px"
-           id="tspan252">
+           id="tspan422">
 </tspan></tspan><tspan
          x="925.07725"
          y="740.4813"
-         id="tspan255"><tspan
+         id="tspan425"><tspan
            style="font-size:17.3333px"
-           id="tspan254">    Emoji      
+           id="tspan424">    Emoji      
 </tspan></tspan><tspan
          x="956.27721"
          y="762.14793"
-         id="tspan257"><tspan
+         id="tspan427"><tspan
            style="font-size:17.3333px"
-           id="tspan256">    World
+           id="tspan426">    World
 </tspan></tspan><tspan
          x="966.6772"
          y="783.81455"
-         id="tspan259"><tspan
+         id="tspan429"><tspan
            style="font-size:17.3333px"
-           id="tspan258">Lower   </tspan></tspan></text></g><g
+           id="tspan428">Lower   </tspan></tspan></text></g><g
      inkscape:groupmode="layer"
      id="layer28"
      inkscape:label="LayerActivationsPressed (Non-base layer)"
@@ -1692,21 +1697,21 @@
        inkscape:label="LayerToggle"><tspan
          x="42.755859"
          y="638.45029"
-         id="tspan261"><tspan
+         id="tspan431"><tspan
            style="fill:#000000"
-           id="tspan260">(Hold)    -&gt; Activate   layer
+           id="tspan430">(Hold)    -&gt; Activate   layer
 </tspan></tspan><tspan
          x="42.755859"
          y="660.11692"
-         id="tspan263"><tspan
+         id="tspan433"><tspan
            style="fill:#000000"
-           id="tspan262">(Release) -&gt; Deactivate layer
+           id="tspan432">(Release) -&gt; Deactivate layer
 </tspan></tspan><tspan
          x="42.755859"
          y="681.78355"
-         id="tspan265"><tspan
+         id="tspan435"><tspan
            style="fill:#000000"
-           id="tspan264">(Tap)     -&gt; Unlock (if layer is locked)     </tspan></tspan></text><text
+           id="tspan434">(Tap)     -&gt; Unlock (if layer is locked)     </tspan></tspan></text><text
        xml:space="preserve"
        transform="matrix(0.26458333,0,0,0.26458333,-227.14359,-1.4044005)"
        id="text3-0"
@@ -1716,7 +1721,7 @@
        inkscape:label="LayerText"><tspan
          x="901.87685"
          y="528.06076"
-         id="tspan267"><tspan
+         id="tspan437"><tspan
            style="font-weight:bold"
-           id="tspan266">Layer Activation (Hold)
+           id="tspan436">Layer Activation (Hold)
 </tspan></tspan></text></g></svg>
